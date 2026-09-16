@@ -1,0 +1,38 @@
+body {
+  font-family: Georgia, serif;
+  background-color: #f3eee5;
+  color: #6B6D43;
+}
+
+h2 {
+  color: #6B6D43;
+}
+
+h1,
+h3 {
+  color: #CF7D65;
+}
+
+div.box-2 {
+  width: 50%;
+  height: 100px;
+  background-color: #f3eee5;
+  border: 2px solid #ABA66F;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+div,
+section,
+.card {
+  background-color: #ffffff;
+  border: 2px solid #ABA66F;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+button {
+  background-color: #E1B8A2;
+  color: #6B6D43;
+  border: none;
+}
