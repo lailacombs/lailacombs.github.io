@@ -4,4 +4,4 @@ This is a simple GitHub repository.
 
 ## Purpose
 
-The purpise of this website serves as a foundation for my future work using markdown, HTML, and CSS. It also serves as a portfolio that showcases my skill in website development. 
+This website serves as a foundation for my future work using Markdown, HTML, and CSS. It also serves as a portfolio showcasing my website development skills. I look forward to watching it grow over the semester.
