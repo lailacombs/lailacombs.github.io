@@ -21,7 +21,7 @@ The larger portfolio vision includes:
 
 ## Project Documentation
 
-The `docs/` folder contains the planning and reflection documents for the project:
+The **[docs](docs/)** folder contains the planning and reflection documents for the project:
 
 - **[Project Scope](docs/scope.md)** — defines the purpose, goals, features, and boundaries of the project.
 - **[Project Plan](docs/project-plan.md)** — outlines the development plan and major steps.
