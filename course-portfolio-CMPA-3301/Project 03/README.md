@@ -17,7 +17,7 @@ The larger portfolio vision includes:
 
 ## Live Website
 
-**[View the live portfolio](https://lailacom.github.io)**
+**[View the live portfolio](index.html)**
 
 ## Project Documentation
 
