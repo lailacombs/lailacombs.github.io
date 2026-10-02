@@ -19,8 +19,6 @@ The larger portfolio vision includes:
 
 **[View the live portfolio](https://lailacom.github.io)**
 
-> Note: The live link assumes the GitHub Pages repository is published at `lailacom.github.io`.
-
 ## Project Documentation
 
 The `docs/` folder contains the planning and reflection documents for the project:
@@ -32,7 +30,7 @@ The `docs/` folder contains the planning and reflection documents for the projec
 ## Technologies
 
 - HTML5
-- CSS3
+- CSS
 - GitHub Pages
 
 ## Pages
