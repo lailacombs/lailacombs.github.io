@@ -1,0 +1,607 @@
+/* ========================================
+   LAILA COMBS PORTFOLIO
+   Warm + Elegant Personal Style
+   ======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500&display=swap');
+
+
+/* ========================================
+   COLOR PALETTE
+   ======================================== */
+
+:root {
+    --ivory: #fff9f1;
+    --cream: #f7eadc;
+    --peach: #efd2bd;
+    --terracotta: #b96f5b;
+    --rose: #c98578;
+    --cocoa: #493733;
+    --brown: #6d5850;
+    --line: #dfcbbd;
+    --white: #fffdf9;
+}
+
+
+/* ========================================
+   BASIC RESET
+   ======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: var(--ivory);
+    color: var(--cocoa);
+    font-family: "DM Sans", Arial, sans-serif;
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   LINKS
+   ======================================== */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* ========================================
+   HEADER
+   ======================================== */
+
+.site-header {
+    max-width: 1120px;
+    margin: auto;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--line);
+}
+
+
+/* Elegant name */
+
+.logo {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--cocoa);
+    transition: color 0.3s ease;
+}
+
+.logo:hover {
+    color: var(--terracotta);
+}
+
+
+/* Navigation */
+
+nav {
+    display: flex;
+    gap: 25px;
+    font-size: 0.9rem;
+}
+
+nav a {
+    color: var(--brown);
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--terracotta);
+}
+
+
+/* Small underline animation */
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 1px;
+    background-color: var(--terracotta);
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after,
+nav a.active::after {
+    width: 100%;
+}
+
+
+/* ========================================
+   HERO
+   ======================================== */
+
+.hero {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 110px 30px 120px;
+    text-align: center;
+
+    animation: fadeUp 0.8s ease;
+}
+
+
+/* Small uppercase label */
+
+.eyebrow,
+.section-label {
+    color: var(--terracotta);
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.72rem;
+    font-weight: 500;
+}
+
+
+/* Main heading */
+
+.hero h1,
+.about-hero h1 {
+    max-width: 850px;
+    margin: 18px auto;
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    line-height: 0.95;
+    font-weight: 500;
+}
+
+
+/* Italic emphasis */
+
+em {
+    color: var(--terracotta);
+    font-style: italic;
+}
+
+
+/* Intro text */
+
+.intro {
+    max-width: 620px;
+    margin: 28px auto 35px;
+
+    color: var(--brown);
+    font-size: 1rem;
+}
+
+
+/* ========================================
+   BUTTON
+   ======================================== */
+
+.button {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    border: 1px solid var(--terracotta);
+    border-radius: 30px;
+
+    color: var(--terracotta);
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--terracotta);
+    color: var(--white);
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(73, 55, 51, 0.12);
+}
+
+
+/* ========================================
+   GENERAL SECTIONS
+   ======================================== */
+
+.welcome,
+.projects,
+.about-content,
+.timeline {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 85px 30px;
+}
+
+.welcome {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    border-top: 1px solid var(--line);
+}
+
+
+/* Section headings */
+
+h2 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 2.7rem;
+    line-height: 1.1;
+
+    font-weight: 500;
+
+    margin-top: 10px;
+}
+
+
+/* ========================================
+   WELCOME SECTION
+   ======================================== */
+
+.welcome > p {
+    color: var(--brown);
+    margin-top: 45px;
+}
+
+
+/* ========================================
+   PROJECTS
+   ======================================== */
+
+.projects {
+    border-top: 1px solid var(--line);
+}
+
+.project-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 22px;
+
+    margin-top: 35px;
+}
+
+
+/* Project cards */
+
+.project-card {
+    background-color: var(--white);
+
+    border: 1px solid var(--line);
+
+    padding: 32px;
+
+    min-height: 220px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* Card interaction */
+
+.project-card:hover {
+    transform: translateY(-6px);
+
+    border-color: var(--rose);
+
+    box-shadow:
+        0 15px 30px rgba(73, 55, 51, 0.10);
+}
+
+
+/* Project number */
+
+.project-card span {
+    color: var(--terracotta);
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 1rem;
+}
+
+
+/* Project title */
+
+.project-card h3 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 1.7rem;
+
+    font-weight: 500;
+
+    margin: 8px 0;
+}
+
+
+/* Project description */
+
+.project-card p {
+    color: var(--brown);
+}
+
+
+/* Project link */
+
+.project-card a {
+    color: var(--terracotta);
+
+    font-size: 0.9rem;
+
+    transition: color 0.3s ease;
+}
+
+.project-card a:hover {
+    color: var(--cocoa);
+}
+
+
+/* ========================================
+   QUOTE
+   ======================================== */
+
+.quote {
+    padding: 95px 30px;
+
+    text-align: center;
+
+    background-color: var(--cream);
+}
+
+.quote p {
+    margin: 0;
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-size: 2rem;
+
+    font-style: italic;
+
+    color: var(--cocoa);
+}
+
+
+/* ========================================
+   ABOUT PAGE
+   ======================================== */
+
+.about-hero {
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 100px 30px 75px;
+
+    text-align: center;
+}
+
+
+/* About content */
+
+.about-content {
+    display: grid;
+
+    grid-template-columns: 1.6fr 0.8fr;
+
+    gap: 70px;
+
+    border-top: 1px solid var(--line);
+}
+
+
+.about-text p:not(.section-label) {
+    color: var(--brown);
+}
+
+
+/* ========================================
+   FACT BOX
+   ======================================== */
+
+.fact-box {
+    background-color: var(--peach);
+
+    padding: 35px;
+
+    align-self: start;
+}
+
+.fact-box ul {
+    list-style: none;
+
+    padding: 0;
+
+    margin: 20px 0 0;
+}
+
+.fact-box li {
+    padding: 7px 0;
+}
+
+
+/* ========================================
+   TIMELINE
+   ======================================== */
+
+.timeline {
+    border-top: 1px solid var(--line);
+}
+
+.timeline-item {
+    display: grid;
+
+    grid-template-columns: 90px 1fr;
+
+    gap: 25px;
+
+    padding: 25px 0;
+
+    border-bottom: 1px solid var(--line);
+}
+
+.timeline-item > span {
+    color: var(--terracotta);
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    font-style: italic;
+
+    font-size: 1.1rem;
+}
+
+.timeline-item h3 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+
+    margin: 0;
+
+    font-size: 1.5rem;
+
+    font-weight: 500;
+}
+
+.timeline-item p {
+    color: var(--brown);
+
+    margin-top: 5px;
+}
+
+
+/* ========================================
+   CLOSING SECTION
+   ======================================== */
+
+.closing {
+    padding: 90px 30px;
+
+    text-align: center;
+
+    background-color: var(--cream);
+}
+
+.closing p {
+    color: var(--brown);
+
+    margin-bottom: 28px;
+}
+
+
+/* ========================================
+   FOOTER
+   ======================================== */
+
+footer {
+    max-width: 1120px;
+
+    margin: auto;
+
+    padding: 25px 30px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color: var(--brown);
+
+    font-size: 0.85rem;
+}
+
+footer a {
+    color: var(--terracotta);
+}
+
+
+/* ========================================
+   SIMPLE ANIMATION
+   ======================================== */
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ========================================
+   MOBILE DESIGN
+   ======================================== */
+
+@media (max-width: 700px) {
+
+    .site-header {
+        padding: 22px 20px;
+    }
+
+    .logo {
+        font-size: 1.55rem;
+    }
+
+    nav {
+        gap: 16px;
+    }
+
+    .hero {
+        padding: 75px 22px 85px;
+    }
+
+    .hero h1,
+    .about-hero h1 {
+        font-size: 3.3rem;
+    }
+
+    .welcome,
+    .about-content {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+    .welcome > p {
+        margin-top: 0;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome,
+    .projects,
+    .about-content,
+    .timeline {
+        padding: 65px 22px;
+    }
+
+    .about-hero {
+        padding: 75px 22px 55px;
+    }
+
+    footer {
+        padding: 22px;
+    }
+}
